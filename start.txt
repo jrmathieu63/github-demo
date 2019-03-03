@@ -1,1 +1,82 @@
 Test Git Quick Start Demo
+
+Git Quick Start Commands
+
+Command Listing, Part 1
+pwd  
+/Users/jrmathieu
+mkdir projects
+cd projects
+pwd
+/Users/jrmathieu/projects
+
+Command Listing, Part 2
+git version
+git version 2.14.3 (Apple Git-98)
+git config --global user.name "John Mathieu"
+git config --global user.email "jrmathieu@comcast.net"
+git config --global --list
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=John Mathieu
+user.email=jrmathieu@comcast.net
+git clone https://github.com/jrmathieu63/github-demo.git
+Cloning into 'github-demo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+cd github-demo
+ls
+github-demo
+git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+echo "Test Git Quick Start demo" >> start.txt
+ls
+README.md	start.txt
+cat start.txt
+Test Git Quick Start Demo
+git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	start.txt
+git add start.txt
+git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   start.txt
+git commit -m "Adding start text file"
+[master 23de4a5] Adding start text file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 start.txt
+John-Mathieus-iMac:github-demo jrmathieu$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/jrmathieu63/github-demo.git
+   fd5d64d..23de4a5  master -> master
+John-Mathieus-iMac:github-demo jrmathieu$ it config --global user.email "jrmathieu@comcast.net"
+-bash: it: command not found
+John-Mathieus-iMac:github-demo jrmathieu$ John-Mathieus-iMac:projects jrmathieu$ git config --global --listgit config --global user.email "jrmathieu@comcast.net"
