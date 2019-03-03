@@ -77,6 +77,3 @@ Writing objects: 100% (3/3), 317 bytes | 317.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/jrmathieu63/github-demo.git
    fd5d64d..23de4a5  master -> master
-John-Mathieus-iMac:github-demo jrmathieu$ it config --global user.email "jrmathieu@comcast.net"
--bash: it: command not found
-John-Mathieus-iMac:github-demo jrmathieu$ John-Mathieus-iMac:projects jrmathieu$ git config --global --listgit config --global user.email "jrmathieu@comcast.net"
